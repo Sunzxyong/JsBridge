@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JsBridge</title>
+    <meta name="author" content="zhengxiaoyong">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta property="og:site_name" content="JsBridge"/>
+    <script src="file:///android_asset/RainbowBridge.js" type="text/javascript"></script>
+
+    <style>
+        .entry{
+        -webkit-padding-start: 30px;
+        }
+        .entry li {
+        line-height: 29px;
+        margin-left: -10px;
+        }
+        .entry li div{
+        margin-right: 10px;
+        padding-left: 8px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        background: #222222;
+        color: white;
+        word-break: break-all;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+        line-height: 15px;
+        font-size: 10pt;
+        }
+        .entry li button{
+        margin-top: 5px;
+        width: 60px;
+        height: 35px;
+        color: #111111;
+        }
+    </style>
+</head>
+
+<body>
+<div class="blog-header">
+    <h3>JsBridge调用native测试列表</h3>
+</div>
+<ul class="entry">
+    <li>
+        Toast弹出<br/>
+        代码：<br/>
+        <div>
+            RainbowBridge.callMethod('JsInvokeJavaScope','showToast',{'message':'我是Js调起的Toast'},function(){});
+        </div>
+        <button onclick="RainbowBridge.callMethod('JsInvokeJavaScope','showToast',{'message':'我是Js调起的Toast'},function(){});">
+            测试
+        </button>
+    </li>
+
+    <br/>
+    <li>
+        获取AppName<br/>
+        代码：<br/>
+        <div>
+            RainbowBridge.callMethod('JsInvokeJavaScope','getAppName',{},function(msg){alert(JSON.stringify(msg))});
+        </div>
+        <button onclick="RainbowBridge.callMethod('JsInvokeJavaScope','getAppName',{},function(msg){alert(JSON.stringify(msg))});">
+            测试
+        </button>
+    </li>
+    <br/>
+    <li>
+        延迟3s执行native方法<br/>
+        代码：<br/>
+        <div>
+            RainbowBridge.callMethod('JsInvokeJavaScope','delayExecuteTask',{},function(msg){alert(JSON.stringify(msg))});
+        </div>
+        <button onclick="RainbowBridge.callMethod('JsInvokeJavaScope','delayExecuteTask',{},function(msg){alert(JSON.stringify(msg))});">
+            测试
+        </button>
+    </li>
+    <br/>
+    <li>
+        获取IMSI<br/>
+        代码：<br/>
+        <div>
+            RainbowBridge.callMethod('JsInvokeJavaScope','getIMSI',{},function(msg){alert(JSON.stringify(msg))});
+        </div>
+        <button onclick="RainbowBridge.callMethod('JsInvokeJavaScope','getIMSI',{},function(msg){alert(JSON.stringify(msg))});">
+            测试
+        </button>
+    </li>
+    <br/>
+    <li>
+        获取当前设备OsSDK版本<br/>
+        代码：<br/>
+        <div>
+            RainbowBridge.callMethod('JsInvokeJavaScope','getOsSdk',{},function(msg){alert(JSON.stringify(msg))});
+        </div>
+        <button onclick="RainbowBridge.callMethod('JsInvokeJavaScope','getOsSdk',{},function(msg){alert(JSON.stringify(msg))});">
+            测试
+        </button>
+    </li>
+    <br/>
+    <br/>
+    <li>
+        通过异步来处理耗时操作<br/>
+        代码：<br/>
+        <div>
+            RainbowBridge.callMethod('JsInvokeJavaScope','performTimeConsumeTask',{},function(msg){alert(JSON.stringify(msg))});
+        </div>
+        <button onclick="RainbowBridge.callMethod('JsInvokeJavaScope','performTimeConsumeTask',{},function(msg){alert(JSON.stringify(msg))});">
+            测试
+        </button>
+    </li>
+    <li>
+        关闭Activity<br/>
+        代码：<br/>
+        <div>
+            RainbowBridge.callMethod('JsInvokeJavaScope','finish',{},function(msg){alert(JSON.stringify(msg))});
+        </div>
+        <button onclick="RainbowBridge.callMethod('JsInvokeJavaScope','finish',{},function(msg){alert(JSON.stringify(msg))});">
+            测试
+        </button>
+    </li>
+</ul>
+</body>
+</html>
