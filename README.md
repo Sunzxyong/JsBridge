@@ -15,7 +15,7 @@ params is a json string.
 ## **Return to the Js data format**
 
 ```
-var resultData = {
+resultData = {
     status: {
         code: 0,//0:Success，1:Failure
         msg: 'request timeout'//Failure to display a message, success can be null
