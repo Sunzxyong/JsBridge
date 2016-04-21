@@ -28,7 +28,7 @@ var resultData = {
 ```
 javascript:RainbowBridge.onComplete('port','resultData');
 ```
-## **The method`s format can be invoked by Js **
+## **The method`s format can be invoked by Js**
 
 ```
 public static void ***(WebView webView, JSONObject data, JsCallback callback) {
