@@ -1,4 +1,4 @@
-package com.zxy.rainbowbridge;
+package com.zxy.jsbridge.test;
 
 import android.app.Activity;
 import android.content.Context;

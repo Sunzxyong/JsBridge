@@ -24,7 +24,7 @@ import java.util.Locale;
  * Created by zhengxiaoyong on 16/4/18.
  */
 public class JsCallback {
-    private static final String CALLBACK_JS_FORMAT = "javascript:RainbowBridge.onComplete(%s,%s);";
+    private static final String CALLBACK_JS_FORMAT = "javascript:JsBridge.onComplete(%s,%s);";
     private WeakReference<WebView> mWebViewWeakRef;
     private String mPort;
 

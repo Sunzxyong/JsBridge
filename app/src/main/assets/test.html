@@ -48,9 +48,9 @@
         Toast弹出<br/>
         代码：<br/>
         <div>
-            RainbowBridge.callMethod('JsInvokeJavaScope','showToast',{'message':'我是Js调起的Toast'},function(){});
+            JsBridge.callMethod('JsInvokeJavaScope','showToast',{'message':'我是Js调起的Toast'},function(){});
         </div>
-        <button onclick="RainbowBridge.callMethod('JsInvokeJavaScope','showToast',{'message':'我是Js调起的Toast'},function(){});">
+        <button onclick="JsBridge.callMethod('JsInvokeJavaScope','showToast',{'message':'我是Js调起的Toast'},function(){});">
             测试
         </button>
     </li>
@@ -60,9 +60,9 @@
         获取AppName<br/>
         代码：<br/>
         <div>
-            RainbowBridge.callMethod('JsInvokeJavaScope','getAppName',{},function(msg){alert(JSON.stringify(msg))});
+            JsBridge.callMethod('JsInvokeJavaScope','getAppName',{},function(msg){alert(JSON.stringify(msg))});
         </div>
-        <button onclick="RainbowBridge.callMethod('JsInvokeJavaScope','getAppName',{},function(msg){alert(JSON.stringify(msg))});">
+        <button onclick="JsBridge.callMethod('JsInvokeJavaScope','getAppName',{},function(msg){alert(JSON.stringify(msg))});">
             测试
         </button>
     </li>
@@ -71,9 +71,9 @@
         延迟3s执行native方法<br/>
         代码：<br/>
         <div>
-            RainbowBridge.callMethod('JsInvokeJavaScope','delayExecuteTask',{},function(msg){alert(JSON.stringify(msg))});
+            JsBridge.callMethod('JsInvokeJavaScope','delayExecuteTask',{},function(msg){alert(JSON.stringify(msg))});
         </div>
-        <button onclick="RainbowBridge.callMethod('JsInvokeJavaScope','delayExecuteTask',{},function(msg){alert(JSON.stringify(msg))});">
+        <button onclick="JsBridge.callMethod('JsInvokeJavaScope','delayExecuteTask',{},function(msg){alert(JSON.stringify(msg))});">
             测试
         </button>
     </li>
@@ -82,9 +82,9 @@
         获取IMSI<br/>
         代码：<br/>
         <div>
-            RainbowBridge.callMethod('JsInvokeJavaScope','getIMSI',{},function(msg){alert(JSON.stringify(msg))});
+            JsBridge.callMethod('JsInvokeJavaScope','getIMSI',{},function(msg){alert(JSON.stringify(msg))});
         </div>
-        <button onclick="RainbowBridge.callMethod('JsInvokeJavaScope','getIMSI',{},function(msg){alert(JSON.stringify(msg))});">
+        <button onclick="JsBridge.callMethod('JsInvokeJavaScope','getIMSI',{},function(msg){alert(JSON.stringify(msg))});">
             测试
         </button>
     </li>
@@ -93,9 +93,9 @@
         获取当前设备OsSDK版本<br/>
         代码：<br/>
         <div>
-            RainbowBridge.callMethod('JsInvokeJavaScope','getOsSdk',{},function(msg){alert(JSON.stringify(msg))});
+            JsBridge.callMethod('JsInvokeJavaScope','getOsSdk',{},function(msg){alert(JSON.stringify(msg))});
         </div>
-        <button onclick="RainbowBridge.callMethod('JsInvokeJavaScope','getOsSdk',{},function(msg){alert(JSON.stringify(msg))});">
+        <button onclick="JsBridge.callMethod('JsInvokeJavaScope','getOsSdk',{},function(msg){alert(JSON.stringify(msg))});">
             测试
         </button>
     </li>
@@ -105,9 +105,9 @@
         通过异步来处理耗时操作<br/>
         代码：<br/>
         <div>
-            RainbowBridge.callMethod('JsInvokeJavaScope','performTimeConsumeTask',{},function(msg){alert(JSON.stringify(msg))});
+            JsBridge.callMethod('JsInvokeJavaScope','performTimeConsumeTask',{},function(msg){alert(JSON.stringify(msg))});
         </div>
-        <button onclick="RainbowBridge.callMethod('JsInvokeJavaScope','performTimeConsumeTask',{},function(msg){alert(JSON.stringify(msg))});">
+        <button onclick="JsBridge.callMethod('JsInvokeJavaScope','performTimeConsumeTask',{},function(msg){alert(JSON.stringify(msg))});">
             测试
         </button>
     </li>
@@ -115,9 +115,9 @@
         关闭Activity<br/>
         代码：<br/>
         <div>
-            RainbowBridge.callMethod('JsInvokeJavaScope','finish',{},function(msg){alert(JSON.stringify(msg))});
+            JsBridge.callMethod('JsInvokeJavaScope','finish',{},function(msg){alert(JSON.stringify(msg))});
         </div>
-        <button onclick="RainbowBridge.callMethod('JsInvokeJavaScope','finish',{},function(msg){alert(JSON.stringify(msg))});">
+        <button onclick="JsBridge.callMethod('JsInvokeJavaScope','finish',{},function(msg){alert(JSON.stringify(msg))});">
             测试
         </button>
     </li>

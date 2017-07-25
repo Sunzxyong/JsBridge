@@ -1,4 +1,4 @@
-package com.zxy.rainbowbridge;
+package com.zxy.jsbridge.test;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,7 +8,7 @@ import android.view.MenuItem;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
-import com.zxy.jsbridge.RainbowBridge;
+import com.zxy.jsbridge.JsBridge;
 import com.zxy.jsbridge.core.JsBridgeWebChromeClient;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         WebSettings settings = mWebView.getSettings();
         settings.setJavaScriptEnabled(true);
 
-        RainbowBridge.getInstance()
+        JsBridge.getInstance()
                 .clazz(JsInvokeJavaScope.class)
                 .inject();
         mWebView.setWebChromeClient(new JsBridgeWebChromeClient());

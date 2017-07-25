@@ -18,7 +18,7 @@
     var ua = win.navigator.userAgent;
     var JS_BRIDGE_PROTOCOL_SCHEMA = "rainbow";
     var increase = 1;
-    var RainbowBridge = win.RainbowBridge || (win.RainbowBridge = {});
+    var JsBridge = win.JsBridge || (win.JsBridge = {});
 
     var ExposeMethod = {
 
@@ -113,8 +113,8 @@
     };
     for (var index in ExposeMethod) {
         if (ExposeMethod.hasOwnProperty(index)) {
-            if (!Object.prototype.hasOwnProperty.call(RainbowBridge, index)) {
-                RainbowBridge[index] = ExposeMethod[index];
+            if (!Object.prototype.hasOwnProperty.call(JsBridge, index)) {
+                JsBridge[index] = ExposeMethod[index];
             }
         }
     }

@@ -1,7 +1,9 @@
 # **RainbowBridge**
 A safe JsBridge framework!
-![](https://img.shields.io/badge/Android%20Arsenal-RainbowBridge-green.svg)
+
 ----
+
+![](https://img.shields.io/badge/Android%20Arsenal-JsBridge-green.svg)
 ## Gif
 ![JsBridge](http://7xswxf.com2.z0.glb.clouddn.com/blog/js.gif)
 
@@ -26,7 +28,7 @@ resultData = {
 ## **Call the Js callback format**
 
 ```
-javascript:RainbowBridge.onComplete('port','resultData');
+javascript:JsBridge.onComplete('port','resultData');
 ```
 ## **The method`s format can be invoked by Js**
 
@@ -73,3 +75,5 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+

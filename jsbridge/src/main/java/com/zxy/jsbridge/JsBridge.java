@@ -5,19 +5,19 @@ import com.zxy.jsbridge.core.NativeMethodInjectHelper;
 /**
  * Created by zhengxiaoyong on 16/4/19.
  */
-public class RainbowBridge {
-    private volatile static RainbowBridge sInstance;
+public class JsBridge {
+    private volatile static JsBridge sInstance;
 
-    private RainbowBridge() {
+    private JsBridge() {
     }
 
-    public static RainbowBridge getInstance() {
-        RainbowBridge instance = sInstance;
+    public static JsBridge getInstance() {
+        JsBridge instance = sInstance;
         if (instance == null) {
-            synchronized (RainbowBridge.class) {
+            synchronized (JsBridge.class) {
                 instance = sInstance;
                 if (instance == null) {
-                    instance = new RainbowBridge();
+                    instance = new JsBridge();
                     sInstance = instance;
                 }
             }
