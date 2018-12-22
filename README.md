@@ -5,7 +5,7 @@ A safe JsBridge framework!
 
 ![](https://img.shields.io/badge/Android%20Arsenal-JsBridge-green.svg)
 ## Gif
-![JsBridge](http://7xswxf.com2.z0.glb.clouddn.com/blog/js.gif)
+![JsBridge](https://raw.githubusercontent.com/Sunzxyong/ImageRepository/master/jsbridge.gif)
 
 ## **Js invoke Native protocol**
 
